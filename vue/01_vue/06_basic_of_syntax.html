@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- 1. Text interpolation -->
+  <div id="app">
+    <p>메세지: {{ msg }}</p>
+  </div>
+
+  <hr>
+
+  <!-- 3. v-show && v-if -->
+  <div id="app3">
+    <p v-show="isActive">보이니? 안보이니?</p>
+    <p v-if="isActive">안보이니? 보이니?</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+  <script>
+    // 1. Text interpolation
+    const app = new Vue({
+      el: '#app',
+      data: {
+        msg: '배 너무 불러, 내일은 점심을 조금만 먹어볼까?'
+      }
+    })
+
+    // 2. v-text && v-html
+
+
+    // 3. v-show && v-if
+    const app3 = new Vue({
+      el: '#app3',
+      data: {
+        isActive: True
+      }
+    })
+  </script>
+</body>
+</html>
