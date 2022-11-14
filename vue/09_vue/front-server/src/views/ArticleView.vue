@@ -1,6 +1,8 @@
 <template>
   <div>
     <h1>Article Page</h1>
+    <router-link :to="{ name: 'CreateView'}">[CREATE]</router-link>
+    <hr>
     <ArticleList/>
     <hr>
   </div>
@@ -13,8 +15,6 @@ export default {
   name: 'ArticleView',
   components: {
     ArticleList
-  },
-  computed:{
   },
   created() {
     this.getArticles()

@@ -104,6 +104,9 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
 ]
 
+# 전부다 허용.
+# CORS_ALLOW_ALL_OTIHINS = True
+
 
 
 ROOT_URLCONF = 'my_api.urls'
