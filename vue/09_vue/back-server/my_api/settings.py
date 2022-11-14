@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     "corsheaders",
 
     # Auth
-    # 'rest_framework.authtoken',
+    'rest_framework.authtoken',
     # 'dj_rest_auth',
 
     # registration
